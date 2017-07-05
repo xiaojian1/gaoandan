@@ -1,0 +1,43 @@
+.headerbg{
+	width: 100%;
+	margin-top: 22px;
+	min-width: 1154px;
+	height: 62px;
+	overflow: hidden;
+}
+.header{
+	margin: 0 auto;
+	width: 1154px;
+	height: 62px;
+	overflow: hidden;
+}
+.hleft,.hright{
+	float: left;
+}
+.hleft{
+	width: 159px;
+	margin: 0 30px;
+	height:62px;
+}
+.hright{
+	width: 935px;
+	height: 30px;
+	overflow: hidden;
+	margin:16px 0;
+}
+.hright .hitem{
+	width: 94px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #003f66;
+	margin: 0 11px;
+	float: left;
+	text-decoration: none;
+	font-size:17px;
+}
+.hright .choiceitem{
+	background: #003f66;
+	color:#fff;
+	border-radius: 5px;
+}
