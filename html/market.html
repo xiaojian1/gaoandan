@@ -71,9 +71,21 @@
 		border-bottom:1px solid #bad1d1; 
 	}
 	.mescon{
-		
+
+	}
+	.ptitle{
+		height: 100px;
+		line-height: 100px;
+		font-size: 16px;
+		text-indent: 32px;
+	}
+	.pmes{
+		line-height: 30px;
+		font-size: 16px;
+		text-indent: 32px;
 	}
 </style>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <body>
 	<div class="headerbg">
 		<div class="header">
@@ -101,7 +113,7 @@
 		<div class="marketnav">
 			<div class="markettitle">市场合作</div>
 			<div class="markettype">市场背景</div>
-			<div class="markettype">合作优势</div>
+			<div class="markettype" style="color:#1e645a">合作优势</div>
 			<div class="markettype">加盟支持</div>
 			<div class="markettype">合作要求</div>
 			<div class="markettype">合作流程</div>
@@ -111,7 +123,8 @@
 			<div class="hezuo">
 				<div class="mestitle">合作优势</div>
 				<div class="mescon">
-					
+					<p class="ptitle">1、差异化产品</p>
+					<p class="pmes">我们的职业证书具有唯一性我们的职业证书具有唯一性我们的职业证书具有唯一性我们的职业证书具有唯一性我们的职业证书具有唯一性我们的职业证书具有唯一性</p>
 				</div>
 			</div>
 		</div>
@@ -134,5 +147,13 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		$('.markettype').on('click',function(){
+			$('.mestitle').text($(this).text());
+			$('.currentmar').text($(this).text());
+			$('.markettype').css({"color":"#669999"});
+			$(this).css({"color":"#1e645a"});
+		});
+	</script>
 </body>
 </html>
