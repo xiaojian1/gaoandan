@@ -41,3 +41,257 @@
 	color:#fff;
 	border-radius: 5px;
 }
+.productbg{
+	width: 100%;
+	min-width: 1154px;
+	height: 322px;
+	overflow: hidden;
+}
+.product{
+	width: 1057px;
+	height: 322px;
+	margin: 20px auto;
+	padding: 0 36px 0 62px;
+}
+.product .pitem{
+	width: 342px;
+	height: 322px;
+	float:left;
+	box-sizing:border-box;
+	border-right: 1px solid #ededed;
+}
+.product .pteach{
+	width: 357px;
+}
+.product .pilast{
+	border-right: 0;
+	width: 358px;
+}
+.product .pitem .pititle{
+	width: 327px;
+	margin-left:15px; 
+	height: 28px;
+}
+.product .pitem .pititle .titileleft{
+	height: 28px;
+	line-height: 28px;
+	width: 220px;
+	font-size: 20px;
+	font-weight: bold;
+	float: left;
+}
+.product .pitem .pititle .titileleft b{
+	margin-left: 10px;
+	font-size: 12px;
+	line-height: 40px;
+	color: #cfcccf;
+}
+.product .pitem .pititle .titileright{
+	float: right;
+	margin-right: 14px;
+	line-height: 30px;
+}
+.product .pitem .pcontent{
+	width: 288px;
+	height: 177px;
+	padding-top: 50px;
+	margin:23px 37px 0 15px;
+	background: url(../img/pxProduct.gif) no-repeat;
+	background-size: 100% 100%;
+}
+.product .pitem .pcontent p{
+	width: 50%;
+	height: 46px;
+	float: left;
+	color: #fff;
+	text-align: center;
+}
+.product .pitem .teach{
+	width: 100%;
+	font-size: 15px;
+	line-height: 25px;
+	color: #979797;
+}
+.product .pitem .teccontent{
+	width: 320px;
+	box-sizing: border-box;
+	margin: 12px 0 0 15px;
+}
+.product .pitem .tecbook{
+	margin: 20px 0 0 40px;
+}
+.product .pitem .elccontent{
+	width: 337px;
+	box-sizing: border-box;
+	margin: 7px 0 0 15px;
+}
+.product .pitem .elc{
+	width: 100%;
+	font-size: 13px;
+	line-height: 16px;
+	font-weight: 500;
+}
+.product .pitem .elcimg{
+	margin: 7px 0 0 0;
+}
+.coursebj{
+	width: 100%;
+	margin-top: 22px;
+	min-width: 1154px;
+	height: 462px;
+	overflow: hidden;
+	background: url(../img/kechengbj.jpg) no-repeat;
+	background-size: 100%;
+	background-position: top left;
+}
+.course{
+	width: 871px;
+	padding: 17px 151px 0px 132px;
+	height: 445px;
+	margin: 0 auto;
+}
+.course .courtitle,.course .courtype{
+	width: 100%;
+	text-align: center;
+	font-weight: bolder;
+}
+.course .courtitle{
+	font-size: 40px;
+	color: #212121;
+}
+.course .courtype{
+	margin-top: 11px;
+	font-size: 46px;
+	color: #615d77;
+}
+.course .enroll{
+	width: 870px;
+}
+.enroll .enrollcour{
+	width: 228px;
+	height: 306px;
+	float: left;
+}
+.enroll .enrollcour:nth-of-type(1){
+	background: url(../img/courleft.gif);
+}
+.newsbg{
+	width: 100%;
+	margin-top: 14px;
+	min-width: 1154px;
+	height: 307px;
+	overflow: hidden;
+}
+.news{
+	width: 1080px;
+	margin:0 auto;
+	padding:0 34px 0 40px;
+}
+.newstypebox{
+	width: 100%;
+	height: 43px;
+	border-bottom: 1px solid #ededed;
+}
+.newstypebox .newstype{
+	width: 77px;
+	margin-right: 20px;
+	line-height: 43px;
+	float: left;
+	cursor: pointer;
+}
+.newstypebox .newstype:hover{
+	color: #1e6459;
+}
+.newsmesbox{
+	width: 100%;
+	height: 211px;
+	margin-top: 52px;
+}
+.newsmesbox .newsmes{
+	height: 16px;
+	width: 100%;
+	overflow: hidden;
+	line-height: 16px;
+	margin-bottom: 20px;
+}
+.newsmesbox .newsmes .newstitle{
+	float: left;
+	cursor: pointer;
+	color: #000;
+}
+.newsmesbox .newsmes .newstime{
+	float: right;
+	margin-right: 25px;
+}
+.telbg{
+	width: 100%;
+	min-width: 1154px;
+	height: 164px;
+	background: #cfd6d7;
+	overflow: hidden;
+}
+.tel{
+	width: 1154px;
+	margin: 30px auto;
+	height: 104px;
+}
+.tel .telleft,.tel .telmid{
+	float: left;
+}
+.tel .telleft{
+	width: 607px;
+}
+.tel .telmid{
+	width: 321px;
+}
+.tel .telright{
+	width: 226px;
+	float: right;
+}
+.telleft .signtel,.telmid .cooperationtel,.telright .courtel{
+	height: 16px;
+	font-size: 16px;
+	line-height: 16px;
+	margin-bottom: 14px;
+}
+.telleft .signtel:nth-of-type(4){
+	margin-bottom: 0;
+}
+.telmid .cooperationtel:nth-of-type(3){
+	margin-bottom: 0;
+}
+.telright .courtel:nth-of-type(2){
+	margin-bottom: 0;
+}
+.footerbg{
+	width: 100%;
+	height: 217px;
+	min-width: 1154px;
+	background: #ddf5f8;
+}
+.footer{
+	width: 1034px;
+	height: 204px;
+	margin: 0 auto;
+	padding: 13px 60px 0 60px;
+}
+.footer .wechat{
+	float: left;
+	width: 142px;
+	margin-right: 26px;
+}
+.footer .wechat .wetitle{
+	height: 39px;
+	width: 142px;
+	font-size: 15px;
+	line-height: 39px;
+}
+.footer .aboutus{
+	margin-top: 42px;
+	margin-left: 70px;
+}
+.footer .aboutus .aboutmes{
+	height: 33px;
+	line-height: 33px;
+	font-size: 13px;
+}
