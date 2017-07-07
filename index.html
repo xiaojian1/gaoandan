@@ -1,219 +1,392 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>比格瑞</title>
+    <title>比格瑞</title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
+<style type="text/css">
+	.clear{ clear:both; line-height:0; font-size:0; height:0;}
+
+#jswbox{width:1154px;height:336px; margin:10px auto;position: relative;}
+#jswbox ul{position:relative;height:336px;}
+#jswbox li{position:absolute;width:0;height:0;z-index:0;cursor:pointer;overflow:hidden;top:152px; left:10px;}
+#jswbox li img{width:100%;height:100%;vertical-align:top; float:left; border:0;}
+#jswbox .prev{position: absolute;left: 10px;top:126px;z-index: 10;color: #FFF}
+#jswbox .next{position: absolute;right: 10px;top:126px;z-index: 10;color: #FFF}
+</style>
 <body>
-	<div class="headerbg">
-		<div class="header">
-			<div class="hleft">
-				<img src="img/logo.jpg">
-			</div>
-			<div class="hright">
-				<a class="hitem choiceitem" href="index.html">网站首页</a>
-				<a class="hitem" href="#">公司概况</a>
-				<a class="hitem" href="html/market.html">市场合作</a>
-				<a class="hitem" href="#">新闻资讯</a>
-				<a class="hitem" href="#">人才储备</a>
-				<a class="hitem" href="#">专家团队</a>
-				<a class="hitem" href="html/download.html">下载中心</a>
-				<a class="hitem" href="#">联系我们</a>
-			</div>
-		</div>
-	</div>
-	<div class="productbg">
-		<div class="product">
-			<div class="pitem">
-				<div class="pititle">
-					<div class="titileleft">培训产业<b>Training industry</b></div>
-					<div class="titileright"><img src="img/index_h1more.gif"></div>
-				</div>
-				<div class="pcontent">
-					<p>BIM建模技术</p>
-					<p>BIM建模技术</p>
-					<p>BIM建模技术</p>
-					<p>BIM建模技术</p>
-					<p>BIM建模技术</p>
-					<p>BIM建模技术</p>
-				</div>
-			</div>
-			<div class="pitem pteach">
-				<div class="pititle">
-					<div class="titileleft">教学用书<b>Teaching book</b></div>
-					<div class="titileright"><img src="img/index_h1more.gif"></div>
-				</div>
-				<div class="teccontent">
-					<p class="teach">我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过</p>
-					<img class="tecbook" src="img/book.jpg">
-				</div>
-			</div>
-			<div class="pitem pilast">
-				<div class="pititle">
-					<div class="titileleft">电力BIM<b>Electric power BIM</b></div>
-					<div class="titileright"><img src="img/index_h1more.gif"></div>
-				</div>
-				<div class="elccontent">
-					<p class="elc">我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们</p>
-					<img class="elcimg" src="img/elcBIM.jpg">
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="coursebj">
-		<div class="course">
-			<div class="courtitle">
-				比格瑞专业BIM专职课程
-			</div>
-			<div class="courtype">
-				三大职业技能班
-			</div>
-			<div class="enroll">
-				<div class="enrollcour"></div>
-				<div class="enrollcour"></div>
-				<div class="enrollcour"></div>
-			</div>
-		</div>
-	</div>
-	<div class="newsbg">
-		<div class="news">
-			<div class="newstypebox">
-				<div class="newstype">行业要闻</div>
-				<div class="newstype">媒体关注</div>
-				<div class="newstype">国家政策</div>
-			</div>
-			<div class="newsmesbox">
-				<div class="newsgroup">
-					<div class="newsmes">
-						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
-						<div class="newstime">06-12</div>
-					</div>
-					<div class="newsmes">
-						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
-						<div class="newstime">06-12</div>
-					</div>
-					<div class="newsmes">
-						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
-						<div class="newstime">06-12</div>
-					</div>
-					<div class="newsmes">
-						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
-						<div class="newstime">06-12</div>
-					</div>
-					<div class="newsmes">
-						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
-						<div class="newstime">06-12</div>
-					</div>
-				</div>
-				<div style="display:none;" class="newsgroup">
-					<div class="newsmes">
-						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房2</div></a>
-						<div class="newstime">06-12</div>
-					</div>
-					<div class="newsmes">
-						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
-						<div class="newstime">06-12</div>
-					</div>
-					<div class="newsmes">
-						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
-						<div class="newstime">06-12</div>
-					</div>
-					<div class="newsmes">
-						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
-						<div class="newstime">06-12</div>
-					</div>
-					<div class="newsmes">
-						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
-						<div class="newstime">06-12</div>
-					</div>
-				</div>
-				<div style="display:none;" class="newsgroup">
-					<div class="newsmes">
-						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房1</div></a>
-						<div class="newstime">06-12</div>
-					</div>
-					<div class="newsmes">
-						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
-						<div class="newstime">06-12</div>
-					</div>
-					<div class="newsmes">
-						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
-						<div class="newstime">06-12</div>
-					</div>
-					<div class="newsmes">
-						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
-						<div class="newstime">06-12</div>
-					</div>
-					<div class="newsmes">
-						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
-						<div class="newstime">06-12</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="telbg">
-		<div class="tel">
-			<div class="telleft">
-				<div class="signtel"><img src="img/tel.jpg"> 建模实操班报名电话：郭老师 186 1193 9730 刘老师 186 0129 6428</div>
-				<div class="signtel"><img src="img/tel.jpg"> 建模实操班报名电话：郭老师 186 1193 9730 刘老师 186 0129 6428</div>
-				<div class="signtel"><img src="img/tel.jpg"> 建模实操班报名电话：郭老师 186 1193 9730 刘老师 186 0129 6428</div>
-				<div class="signtel"><img src="img/tel.jpg"> 建模实操班报名电话：郭老师 186 1193 9730 刘老师 186 0129 6428</div>
-			</div>
-			<div class="telmid">
-				<div class="cooperationtel"><img src="img/tel.jpg"> 项目合作电话：孟老师 181 6681 8593</div>
-				<div class="cooperationtel"><img src="img/tel.jpg"> 项目合作电话：孟老师 181 6681 8593</div>
-				<div class="cooperationtel"><img src="img/tel.jpg"> 项目合作电话：孟老师 181 6681 8593</div>
-			</div>
-			<div class="telright">
-				<div class="courtel"><img src="img/people.jpg"> 课程咨询QQ：504821231</div>
-				<div class="courtel"><img src="img/people.jpg"> 课程咨询QQ：504821231</div>
-			</div>
-		</div>
-	</div>
-	<div class="footerbg">
-		<div class="footer">
-			<div class="wechat">
-				<div class="wetitle">官方微信</div>
-				<div><img src="img/wechat.jpg"></div>
-			</div>
-			<div class="wechat">
-				<div class="wetitle">公众号</div>
-				<div><img src="img/gongzhonghao.jpg"></div>
-			</div>
-			<div class="aboutus">
-				<div class="aboutmes">djfalkjf;afja</div>
-				<div class="aboutmes">地址:北京市石景山区古城西路景山财富中心B座3楼</div>
-				<div class="aboutmes">客服部电话：010-5729-0758、100043</div>
-				<div class="aboutmes">公司邮箱：bjbgrjy@163.com</div>
-			</div>
-		</div>
-	</div>
+    <div class="headerbg">
+        <div class="header">
+            <div class="hleft">
+                <img src="img/logo.jpg">
+            </div>
+            <div class="hright">
+                <a class="hitem choiceitem" href="index.html">网站首页</a>
+                <a class="hitem" href="#">公司概况</a>
+                <a class="hitem" href="html/market.html">市场合作</a>
+                <a class="hitem" href="#">新闻资讯</a>
+                <a class="hitem" href="#">人才储备</a>
+                <a class="hitem" href="#">专家团队</a>
+                <a class="hitem" href="html/download.html">下载中心</a>
+                <a class="hitem" href="#">联系我们</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="jswbox">
+            <pre class="prev">prev</pre>
+            <pre class="next">next</pre>
+            <ul>
+                <li style="display: block; width: 568px; height: 284px; top: 15px; left: 0px; z-index: 1; "><img src="img/1.jpg" data-url="img/13721449166318.jpg" alt="derrick" style="opacity: 87; "></li>
+                <li style="display: block; width: 616px; height: 310px; top: 0px; left: 300px; z-index: 2; "><img src="img/2.jpg" data-url="img/13721447673663.jpg" alt="MAGGIE" style="opacity: 87; "></li>
+                <li style="display: block; width: 568px; height: 284px; top: 15px;left: 600px; z-index: 1;  "><img src="img/4.jpg" data-url="img/13721443987501.jpg" alt="ÑÕ×Ó³¬" style="opacity: 87;"></li>
+                <li style="display: block; width: 568px; height: 284px; top: 15px; left: 600px; z-index: 0; "><img src="img/3.jpg" data-url="img/1372144645552.jpg" alt="ÐíÔÚºÆ" style="opacity: 87; "></li>
+            </ul>
+        </div>
+    </div>
+    <div class="productbg">
+        <div class="product">
+            <div class="pitem">
+                <div class="pititle">
+                    <div class="titileleft">培训产业<b>Training industry</b></div>
+                    <div class="titileright"><img src="img/index_h1more.gif"></div>
+                </div>
+                <div class="pcontent">
+                    <p>BIM建模技术</p>
+                    <p>BIM建模技术</p>
+                    <p>BIM建模技术</p>
+                    <p>BIM建模技术</p>
+                    <p>BIM建模技术</p>
+                    <p>BIM建模技术</p>
+                </div>
+            </div>
+            <div class="pitem pteach">
+                <div class="pititle">
+                    <div class="titileleft">教学用书<b>Teaching book</b></div>
+                    <div class="titileright"><img src="img/index_h1more.gif"></div>
+                </div>
+                <div class="teccontent">
+                    <p class="teach">我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过</p>
+                    <img class="tecbook" src="img/book.jpg">
+                </div>
+            </div>
+            <div class="pitem pilast">
+                <div class="pititle">
+                    <div class="titileleft">电力BIM<b>Electric power BIM</b></div>
+                    <div class="titileright"><img src="img/index_h1more.gif"></div>
+                </div>
+                <div class="elccontent">
+                    <p class="elc">我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们通过我们</p>
+                    <img class="elcimg" src="img/elcBIM.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="coursebj">
+        <div class="course">
+            <div class="courtitle">
+                比格瑞专业BIM专职课程
+            </div>
+            <div class="courtype">
+                三大职业技能班
+            </div>
+            <div class="enroll">
+                <div class="enrollcour"></div>
+                <div class="enrollcour"></div>
+                <div class="enrollcour"></div>
+            </div>
+        </div>
+    </div>
+    <div class="newsbg">
+        <div class="news">
+            <div class="newstypebox">
+                <div class="newstype">行业要闻</div>
+                <div class="newstype">媒体关注</div>
+                <div class="newstype">国家政策</div>
+            </div>
+            <div class="newsmesbox">
+                <div class="newsgroup">
+                    <div class="newsmes">
+                        <a href="#">
+                            <div class="newstitle">比格瑞新建BIM实操电脑机房</div>
+                        </a>
+                        <div class="newstime">06-12</div>
+                    </div>
+                    <div class="newsmes">
+                        <a href="#">
+                            <div class="newstitle">比格瑞新建BIM实操电脑机房</div>
+                        </a>
+                        <div class="newstime">06-12</div>
+                    </div>
+                    <div class="newsmes">
+                        <a href="#">
+                            <div class="newstitle">比格瑞新建BIM实操电脑机房</div>
+                        </a>
+                        <div class="newstime">06-12</div>
+                    </div>
+                    <div class="newsmes">
+                        <a href="#">
+                            <div class="newstitle">比格瑞新建BIM实操电脑机房</div>
+                        </a>
+                        <div class="newstime">06-12</div>
+                    </div>
+                    <div class="newsmes">
+                        <a href="#">
+                            <div class="newstitle">比格瑞新建BIM实操电脑机房</div>
+                        </a>
+                        <div class="newstime">06-12</div>
+                    </div>
+                </div>
+                <div style="display:none;" class="newsgroup">
+                    <div class="newsmes">
+                        <a href="#">
+                            <div class="newstitle">比格瑞新建BIM实操电脑机房2</div>
+                        </a>
+                        <div class="newstime">06-12</div>
+                    </div>
+                    <div class="newsmes">
+                        <a href="#">
+                            <div class="newstitle">比格瑞新建BIM实操电脑机房</div>
+                        </a>
+                        <div class="newstime">06-12</div>
+                    </div>
+                    <div class="newsmes">
+                        <a href="#">
+                            <div class="newstitle">比格瑞新建BIM实操电脑机房</div>
+                        </a>
+                        <div class="newstime">06-12</div>
+                    </div>
+                    <div class="newsmes">
+                        <a href="#">
+                            <div class="newstitle">比格瑞新建BIM实操电脑机房</div>
+                        </a>
+                        <div class="newstime">06-12</div>
+                    </div>
+                    <div class="newsmes">
+                        <a href="#">
+                            <div class="newstitle">比格瑞新建BIM实操电脑机房</div>
+                        </a>
+                        <div class="newstime">06-12</div>
+                    </div>
+                </div>
+                <div style="display:none;" class="newsgroup">
+                    <div class="newsmes">
+                        <a href="#">
+                            <div class="newstitle">比格瑞新建BIM实操电脑机房1</div>
+                        </a>
+                        <div class="newstime">06-12</div>
+                    </div>
+                    <div class="newsmes">
+                        <a href="#">
+                            <div class="newstitle">比格瑞新建BIM实操电脑机房</div>
+                        </a>
+                        <div class="newstime">06-12</div>
+                    </div>
+                    <div class="newsmes">
+                        <a href="#">
+                            <div class="newstitle">比格瑞新建BIM实操电脑机房</div>
+                        </a>
+                        <div class="newstime">06-12</div>
+                    </div>
+                    <div class="newsmes">
+                        <a href="#">
+                            <div class="newstitle">比格瑞新建BIM实操电脑机房</div>
+                        </a>
+                        <div class="newstime">06-12</div>
+                    </div>
+                    <div class="newsmes">
+                        <a href="#">
+                            <div class="newstitle">比格瑞新建BIM实操电脑机房</div>
+                        </a>
+                        <div class="newstime">06-12</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="telbg">
+        <div class="tel">
+            <div class="telleft">
+                <div class="signtel"><img src="img/tel.jpg"> 建模实操班报名电话：郭老师 186 1193 9730 刘老师 186 0129 6428</div>
+                <div class="signtel"><img src="img/tel.jpg"> 建模实操班报名电话：郭老师 186 1193 9730 刘老师 186 0129 6428</div>
+                <div class="signtel"><img src="img/tel.jpg"> 建模实操班报名电话：郭老师 186 1193 9730 刘老师 186 0129 6428</div>
+                <div class="signtel"><img src="img/tel.jpg"> 建模实操班报名电话：郭老师 186 1193 9730 刘老师 186 0129 6428</div>
+            </div>
+            <div class="telmid">
+                <div class="cooperationtel"><img src="img/tel.jpg"> 项目合作电话：孟老师 181 6681 8593</div>
+                <div class="cooperationtel"><img src="img/tel.jpg"> 项目合作电话：孟老师 181 6681 8593</div>
+                <div class="cooperationtel"><img src="img/tel.jpg"> 项目合作电话：孟老师 181 6681 8593</div>
+            </div>
+            <div class="telright">
+                <div class="courtel"><img src="img/people.jpg"> 课程咨询QQ：504821231</div>
+                <div class="courtel"><img src="img/people.jpg"> 课程咨询QQ：504821231</div>
+            </div>
+        </div>
+    </div>
+    <div class="footerbg">
+        <div class="footer">
+            <div class="wechat">
+                <div class="wetitle">官方微信</div>
+                <div><img src="img/wechat.jpg"></div>
+            </div>
+            <div class="wechat">
+                <div class="wetitle">公众号</div>
+                <div><img src="img/gongzhonghao.jpg"></div>
+            </div>
+            <div class="aboutus">
+                <div class="aboutmes">djfalkjf;afja</div>
+                <div class="aboutmes">地址:北京市石景山区古城西路景山财富中心B座3楼</div>
+                <div class="aboutmes">客服部电话：010-5729-0758、100043</div>
+                <div class="aboutmes">公司邮箱：bjbgrjy@163.com</div>
+            </div>
+        </div>
+    </div>
 </body>
 <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="js/jquery-1.12.4.js"></script> -->
 <script type="text/javascript">
-	$('.newstype').on('mouseover',function(){
-		$(this).css('color','#1e6459').siblings().css('color','#000');
-		$('.newsgroup').eq($(this).index()).css('display','block').siblings().css('display','none');
-	})
-    function startTicker() {
-        $(".newsgroup").eq(0).find(".newsmes:first").slideUp(function () {
-            $(this).appendTo($(".newsgroup").eq(0)).slideDown();
-        });
-        $(".newsgroup").eq(1).find(".newsmes:first").slideUp(function () {
-            $(this).appendTo($(".newsgroup").eq(1)).slideDown();
-        });
-        $(".newsgroup").eq(2).find(".newsmes:first").slideUp(function () {
-            $(this).appendTo($(".newsgroup").eq(2)).slideDown();
-        });
+$('.newstype').on('mouseover', function() {
+    $(this).css('color', '#1e6459').siblings().css('color', '#000');
+    $('.newsgroup').eq($(this).index()).css('display', 'block').siblings().css('display', 'none');
+})
+
+function startTicker() {
+    $(".newsgroup").eq(0).find(".newsmes:first").slideUp(function() {
+        $(this).appendTo($(".newsgroup").eq(0)).slideDown();
+    });
+    $(".newsgroup").eq(1).find(".newsmes:first").slideUp(function() {
+        $(this).appendTo($(".newsgroup").eq(1)).slideDown();
+    });
+    $(".newsgroup").eq(2).find(".newsmes:first").slideUp(function() {
+        $(this).appendTo($(".newsgroup").eq(2)).slideDown();
+    });
+}
+var jishi = setInterval(startTicker, 3000);
+$('.newsmes').on('mouseover', function() {
+    clearInterval(jishi);
+});
+$('.newsmes').on('mouseout', function() {
+    jishi = setInterval(startTicker, 3000);
+});
+//轮播图----------------------------------------------------------------------------
+$(function(){
+	new ZoomPic("jswbox");
+	
+})
+function ZoomPic() { this.initialize.apply(this, arguments) }
+ZoomPic.prototype = {
+    initialize: function(id) {
+        var _this = this;
+        this.wrap = typeof id === "string" ? document.getElementById(id) : id;
+        this.oUl = this.wrap.getElementsByTagName("ul")[0];
+        this.aLi = this.wrap.getElementsByTagName("li");
+        this.prev = this.wrap.getElementsByTagName("pre")[0];
+        this.next = this.wrap.getElementsByTagName("pre")[1];
+        this.timer = null;
+        this.aSort = [];
+        this.iCenter = 3;
+        this._doPrev = function() {
+            return _this.doPrev.apply(_this) };
+        this._doNext = function() {
+            return _this.doNext.apply(_this) };
+            //这儿有个坑！！！注意对象的先后顺序
+        this.options = [{ width: 616, height: 310, top: 0, left: 300, zIndex: 3 }, { width: 568, height: 284, top: 15, left: 600, zIndex: 2 }, { width: 568, height: 284, top:15, left: 600, zIndex: 0 },{ width: 568, height: 284, top:15, left: 0, zIndex: 1 } ];
+        for (var i = 0; i < this.aLi.length; i++) this.aSort[i] = this.aLi[i];
+        this.aSort.unshift(this.aSort.pop());
+        this.setUp();
+        this.addEvent(this.prev, "click", this._doPrev);
+        this.addEvent(this.next, "click", this._doNext);
+        this.doImgClick();
+        this.timer = setInterval(function() { _this.doNext() }, 3000);
+        this.wrap.onmouseover = function() { clearInterval(_this.timer) };
+        this.wrap.onmouseout = function() {
+            _this.timer = setInterval(function() { _this.doNext() }, 3000);
+        }
+    },
+    doPrev: function() { this.aSort.unshift(this.aSort.pop());
+        this.setUp() },
+    doNext: function() { this.aSort.push(this.aSort.shift());
+        this.setUp() },
+    doImgClick: function() {
+        var _this = this;
+        for (var i = 0; i < this.aSort.length; i++) {
+            this.aSort[i].onclick = function() {
+                if (this.index > _this.iCenter) {
+                    for (var i = 0; i < this.index - _this.iCenter; i++) _this.aSort.push(_this.aSort.shift());
+                    _this.setUp() } else if (this.index < _this.iCenter) {
+                    for (var i = 0; i < _this.iCenter - this.index; i++) _this.aSort.unshift(_this.aSort.pop());
+                    _this.setUp() }
+            }
+        }
+    },
+    setUp: function() {
+        var _this = this;
+        var i = 0;
+        for (i = 0; i < this.aSort.length; i++) this.oUl.appendChild(this.aSort[i]);
+        for (i = 0; i < this.aSort.length; i++) {
+            this.aSort[i].index = i;
+            if (i < 7) {
+                this.css(this.aSort[i], "display", "block");
+                this.doMove(this.aSort[i], this.options[i], function() {
+                    _this.doMove(_this.aSort[_this.iCenter].getElementsByTagName("img")[0], { opacity: 100 }, function() {
+                        _this.doMove(_this.aSort[_this.iCenter].getElementsByTagName("img")[0], { opacity: 100 }, function() {
+                            _this.aSort[_this.iCenter].onmouseover = function() { _this.doMove(this.getElementsByTagName("div")[0], { bottom: 0 }) };
+                            _this.aSort[_this.iCenter].onmouseout = function() { _this.doMove(this.getElementsByTagName("div")[0], { bottom: -100 }); }
+                        })
+                    })
+                });
+            } else { this.css(this.aSort[i], "display", "none");
+                this.css(this.aSort[i], "width", 0);
+                this.css(this.aSort[i], "height", 0);
+                this.css(this.aSort[i], "top", 152);
+                this.css(this.aSort[i], "left", this.oUl.offsetWidth / 2) }
+            if (i < this.iCenter || i > this.iCenter) {
+                this.css(this.aSort[i].getElementsByTagName("img")[0], "opacity", 30)
+                this.aSort[i].onmouseover = function() { _this.doMove(this.getElementsByTagName("img")[0], { opacity: 100 }) };
+                this.aSort[i].onmouseout = function() { _this.doMove(this.getElementsByTagName("img")[0], { opacity: 35 }) };
+                this.aSort[i].onmouseout();
+            } else { this.aSort[i].onmouseover = this.aSort[i].onmouseout = null }
+        }
+    },
+    addEvent: function(oElement, sEventType, fnHandler) {
+        return oElement.addEventListener ? oElement.addEventListener(sEventType, fnHandler, false) : oElement.attachEvent("on" + sEventType, fnHandler) },
+    css: function(oElement, attr, value) {
+        if (arguments.length == 2) {
+            return oElement.currentStyle ? oElement.currentStyle[attr] : getComputedStyle(oElement, null)[attr] } else if (arguments.length == 3) {
+            switch (attr) {
+                case "width":
+                case "height":
+                case "top":
+                case "left":
+                case "bottom":
+                    oElement.style[attr] = value + "px";
+                    break;
+                default:
+                    oElement.style[attr] = value;
+                    break }
+        }
+    },
+    doMove: function(oElement, oAttr, fnCallBack) {
+        var _this = this;
+        clearInterval(oElement.timer);
+        oElement.timer = setInterval(function() {
+            var bStop = true;
+            for (var property in oAttr) {
+                var iCur = parseFloat(_this.css(oElement, property));
+                property == "opacity" && (iCur = parseInt(iCur.toFixed(2) * 100));
+                var iSpeed = (oAttr[property] - iCur) / 5;
+                iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
+                if (iCur != oAttr[property]) { bStop = false;
+                    _this.css(oElement, property, iCur + iSpeed) }
+            }
+            if (bStop) { clearInterval(oElement.timer);
+                fnCallBack && fnCallBack.apply(_this, arguments) }
+        }, 30)
     }
-    var jishi = setInterval(startTicker,3000);
-    $('.newsmes').on('mouseover',function(){
-    	clearInterval(jishi);
-    });
-    $('.newsmes').on('mouseout',function(){
-		jishi = setInterval(startTicker,3000);
-    });
+};
+//--------------------------------------------------------------------------------------------
 </script>
+
 </html>
