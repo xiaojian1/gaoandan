@@ -12,9 +12,11 @@
 #jswbox{width:1154px;height:336px; margin:10px auto;position: relative;}
 #jswbox ul{position:relative;height:336px;}
 #jswbox li{position:absolute;width:0;height:0;z-index:0;cursor:pointer;overflow:hidden;top:152px; left:10px;}
+#jswbox li{display: block;width: 100%;height: 100%}
 #jswbox li img{width:100%;height:100%;vertical-align:top; float:left; border:0;}
-#jswbox .prev{position: absolute;left: 10px;top:126px;z-index: 10;color: #FFF}
-#jswbox .next{position: absolute;right: 10px;top:126px;z-index: 10;color: #FFF}
+#jswbox .arrow{position: absolute;top:120px;z-index: 10;width: 22px;height: 65px;background-size: 100%;cursor: pointer;}
+#jswbox .prev{left: 10px;background: url(img/prev.png) no-repeat;}
+#jswbox .next{right: 10px;background: url(img/next.png) no-repeat;}
 </style>
 <body>
     <div class="headerbg">
@@ -36,13 +38,13 @@
     </div>
     <div>
         <div id="jswbox">
-            <pre class="prev">prev</pre>
-            <pre class="next">next</pre>
+            <pre class="prev arrow"></pre>
+            <pre class="next arrow"></pre>
             <ul>
-                <li style="display: block; width: 568px; height: 284px; top: 15px; left: 0px; z-index: 1; "><img src="img/1.jpg" data-url="img/13721449166318.jpg" alt="derrick" style="opacity: 87; "></li>
-                <li style="display: block; width: 616px; height: 310px; top: 0px; left: 300px; z-index: 2; "><img src="img/2.jpg" data-url="img/13721447673663.jpg" alt="MAGGIE" style="opacity: 87; "></li>
-                <li style="display: block; width: 568px; height: 284px; top: 15px;left: 600px; z-index: 1;  "><img src="img/4.jpg" data-url="img/13721443987501.jpg" alt="ÑÕ×Ó³¬" style="opacity: 87;"></li>
-                <li style="display: block; width: 568px; height: 284px; top: 15px; left: 600px; z-index: 0; "><img src="img/3.jpg" data-url="img/1372144645552.jpg" alt="ÐíÔÚºÆ" style="opacity: 87; "></li>
+                <li style="display: block; width: 568px; height: 284px; top: 15px; left: 0px; z-index: 1; "><a href="html/chief.html"><img src="img/1.jpg" data-url="img/13721449166318.jpg" alt="derrick" style="opacity: 87; "></a></li>
+                <li style="display: block; width: 616px; height: 310px; top: 0px; left: 300px; z-index: 2; "><a href="html/model.html"><img src="img/2.jpg" data-url="img/13721447673663.jpg" alt="MAGGIE" style="opacity: 87; "></a></li>
+                <li style="display: block; width: 568px; height: 284px; top: 15px;left: 600px; z-index: 1;  "><a href="#"><img src="img/4.jpg" data-url="img/13721443987501.jpg" alt="ÑÕ×Ó³¬" style="opacity: 87;"></a></li>
+                <li style="display: block; width: 568px; height: 284px; top: 15px; left: 600px; z-index: 0; "><a href="#"><img src="img/3.jpg" data-url="img/1372144645552.jpg" alt="ÐíÔÚºÆ" style="opacity: 87; "></a></li>
             </ul>
         </div>
     </div>
@@ -244,8 +246,8 @@
         </div>
     </div>
 </body>
-<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<!-- <script type="text/javascript" src="js/jquery-1.12.4.js"></script> -->
+<!-- <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
+<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
 <script type="text/javascript">
 $('.newstype').on('mouseover', function() {
     $(this).css('color', '#1e6459').siblings().css('color', '#000');
