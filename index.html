@@ -84,25 +84,71 @@
 				<div class="newstype">国家政策</div>
 			</div>
 			<div class="newsmesbox">
-				<div class="newsmes">
-					<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
-					<div class="newstime">06-12</div>
+				<div class="newsgroup">
+					<div class="newsmes">
+						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
+						<div class="newstime">06-12</div>
+					</div>
+					<div class="newsmes">
+						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
+						<div class="newstime">06-12</div>
+					</div>
+					<div class="newsmes">
+						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
+						<div class="newstime">06-12</div>
+					</div>
+					<div class="newsmes">
+						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
+						<div class="newstime">06-12</div>
+					</div>
+					<div class="newsmes">
+						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
+						<div class="newstime">06-12</div>
+					</div>
 				</div>
-				<div class="newsmes">
-					<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
-					<div class="newstime">06-12</div>
+				<div style="display:none;" class="newsgroup">
+					<div class="newsmes">
+						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房2</div></a>
+						<div class="newstime">06-12</div>
+					</div>
+					<div class="newsmes">
+						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
+						<div class="newstime">06-12</div>
+					</div>
+					<div class="newsmes">
+						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
+						<div class="newstime">06-12</div>
+					</div>
+					<div class="newsmes">
+						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
+						<div class="newstime">06-12</div>
+					</div>
+					<div class="newsmes">
+						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
+						<div class="newstime">06-12</div>
+					</div>
 				</div>
-				<div class="newsmes">
-					<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
-					<div class="newstime">06-12</div>
-				</div>
-				<div class="newsmes">
-					<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
-					<div class="newstime">06-12</div>
-				</div>
-				<div class="newsmes">
-					<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
-					<div class="newstime">06-12</div>
+				<div style="display:none;" class="newsgroup">
+					<div class="newsmes">
+						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房1</div></a>
+						<div class="newstime">06-12</div>
+					</div>
+					<div class="newsmes">
+						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
+						<div class="newstime">06-12</div>
+					</div>
+					<div class="newsmes">
+						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
+						<div class="newstime">06-12</div>
+					</div>
+					<div class="newsmes">
+						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
+						<div class="newstime">06-12</div>
+					</div>
+					<div class="newsmes">
+						<a href="#"><div class="newstitle">比格瑞新建BIM实操电脑机房</div></a>
+						<div class="newstime">06-12</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -121,8 +167,8 @@
 				<div class="cooperationtel"><img src="img/tel.jpg"> 项目合作电话：孟老师 181 6681 8593</div>
 			</div>
 			<div class="telright">
-				<div class="courtel"><img src="img/tel.jpg"> 课程咨询QQ：504821231</div>
-				<div class="courtel"><img src="img/tel.jpg"> 课程咨询QQ：504821231</div>
+				<div class="courtel"><img src="img/people.jpg"> 课程咨询QQ：504821231</div>
+				<div class="courtel"><img src="img/people.jpg"> 课程咨询QQ：504821231</div>
 			</div>
 		</div>
 	</div>
@@ -145,4 +191,29 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+	$('.newstype').on('mouseover',function(){
+		$(this).css('color','#1e6459').siblings().css('color','#000');
+		$('.newsgroup').eq($(this).index()).css('display','block').siblings().css('display','none');
+	})
+    function startTicker() {
+        $(".newsgroup").eq(0).find(".newsmes:first").slideUp(function () {
+            $(this).appendTo($(".newsgroup").eq(0)).slideDown();
+        });
+        $(".newsgroup").eq(1).find(".newsmes:first").slideUp(function () {
+            $(this).appendTo($(".newsgroup").eq(1)).slideDown();
+        });
+        $(".newsgroup").eq(2).find(".newsmes:first").slideUp(function () {
+            $(this).appendTo($(".newsgroup").eq(2)).slideDown();
+        });
+    }
+    var jishi = setInterval(startTicker,3000);
+    $('.newsmes').on('mouseover',function(){
+    	clearInterval(jishi);
+    });
+    $('.newsmes').on('mouseout',function(){
+		jishi = setInterval(startTicker,3000);
+    });
+</script>
 </html>
