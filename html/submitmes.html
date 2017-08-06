@@ -87,6 +87,28 @@
         text-align: center;
         cursor: pointer;
     }
+    .fukuan{
+        width: 548px;
+        height: 548px;
+        border-radius: 30px;
+        box-sizing: border-box;
+        background: #fff;
+        padding-top:10px; 
+        display: none;
+        box-shadow: 0px 0px 100px #bdbdbd;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -274px;
+        margin-left: -274px;
+    }
+    .fukuantitle{
+        width: 100%;
+        text-align: center;
+        height: 88px;
+        line-height: 88px;
+        font-size: 32px;
+    }
     </style>
 </head>
 
@@ -159,6 +181,20 @@
             <div class="tijiao">点击提交</div>
         </form>
     </div>
+    <div class="fukuan">
+        <div class="fukuantitle"></div>
+        <img src="../img/moneybj.jpg">
+    </div>
 </body>
-
+<!-- <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
+<script type="text/javascript" src="../js/jquery-1.12.4.js"></script>
+<script type="text/javascript">
+    $('.tijiao').on('click',function(){
+        $('.fukuan').show();
+    });
+    if(sessionStorage.getItem('mes')){
+        var mes1 = JSON.parse(sessionStorage.getItem('mes'))[0];
+        $('.fukuantitle').html(''+mes1.name+' &nbsp;'+mes1.sname+' &nbsp;'+mes1.price);
+    }
+</script>
 </html>

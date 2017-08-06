@@ -76,7 +76,7 @@
         <div class="content">
             <div class="title">
                 <p class="bold" style="padding-left: 100px;font-size: 20px">课程设计：</p>
-                <p class="bold" style="padding-left: 80px; font-size: 18px">BIM建模技术培训课程包（BIM建模经理课程）：</p>
+                <p class="bold courseName" style="padding-left: 80px; font-size: 18px">BIM建模技术培训课程包（BIM建模经理课程）：</p>
             </div>
             <div class="table">
             	<table border="2" cellspacing="0">
@@ -86,16 +86,16 @@
             			<th width="11%">开班规模</th>
             			<th width="11%">学习周期</th>
             			<th width="11%">学习费用</th>
-            			<th width="11%">学习费用</th>
+            			<th width="11%">课程选择</th>
             			<th width="31%">教学服务范围说明</th>
             		</tr>
             		<tr>
             			<td class="bold" rowspan="2">BIM建模技术理论课</td>
-            			<td class="bold">BIM建模技术</td>
+            			<td class="bold scName">BIM建模技术</td>
             			<td rowspan="2">35人开班</td>
             			<td rowspan="2">4天</td>
             			<td rowspan="2">3200元</td>
-            			<td rowspan="2"><input type="checkbox" name="" value=""></td>
+            			<td rowspan="2"><input class="course1" type="checkbox" name="" value=""></td>
             			<td rowspan="6">
             				<p style="text-align: left;"><span class="bold">授课：理论+实操。Revit或</span>ArchiCAD软件建模操作培训，一机一人小班授课。</p>
             				<p style="text-align: left;"><span class="bold">效果：</span>学得会，用得上，考得过</p>
@@ -108,40 +108,67 @@
             		</tr>
             		<tr>
             			<td class="bold" rowspan="4">Revit或ArchiCAD软件建模操作</td>
-            			<td class="bold">建筑建模</td>
+            			<td class="bold scName">建筑建模</td>
             			<td>35人开班</td>
             			<td>4天</td>
             			<td>1800元</td>
-            			<td><input type="checkbox" name="" value=""></td>
+            			<td><input type="checkbox" class="course2" name="choiceCourse" value=""></td>
             		</tr>
             		<tr>
-            			<td class="bold">结构建模</td>
+            			<td class="bold scName">结构建模</td>
             			<td>35人开班</td>
             			<td>4天</td>
             			<td>1800元</td>
-            			<td><input type="checkbox" name="" value=""></td>
+            			<td><input type="checkbox" class="course3" name="choiceCourse" value=""></td>
             		</tr>
             		<tr>
-            			<td class="bold">机电建模</td>
+            			<td class="bold scName">机电建模</td>
             			<td>35人开班</td>
             			<td>4天</td>
             			<td>1800元</td>
-            			<td><input type="checkbox" name="" value=""></td>
+            			<td><input type="checkbox" class="course4" name="choiceCourse" value=""></td>
             		</tr>
             		<tr>
-            			<td class="bold">模型优化深化</td>
+            			<td class="bold scName">模型优化深化</td>
             			<td>35人开班</td>
             			<td>4天</td>
             			<td>3200元</td>
-            			<td><input type="checkbox" name="" value=""></td>
+            			<td><input type="checkbox" class="course5" name="choiceCourse" value=""></td>
             		</tr>
             	</table>
             </div>
             <p class="btn_box">
-            	<a class="btn bold" href="">点击报名</a>
+            	<a class="btn bold" href="javascript:void(0);">点击报名</a>
             </p>
         </div>
     </div>
 </body>
-
+<!-- <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
+<script type="text/javascript" src="../js/jquery-1.12.4.js"></script>
+<script type="text/javascript">
+    $('input:checkbox').on('click',function(){
+        // $('input:checkbox').removeAttr('checked');
+        console.log($(this).parents('tr').siblings().find('input:checkbox'));
+        $(this).attr('checked','checked').parents('tr').siblings().find('input:checkbox').removeAttr('checked');
+    })
+    $('.btn').on('click',a);
+    function a() {
+        if($("input:checkbox:checked").length!=0){
+            var choice = [];
+            $("input:checkbox:checked").each(function(){
+                var obj = {};
+                obj.price = $(this).parent().prev().text();
+                obj.name = $('.courseName').text().substring(0,5);
+                obj.sname = $(this).parent().siblings('.scName').text();
+                choice.push(obj);
+                console.log(obj)
+                console.log($(this));
+            });
+            sessionStorage.setItem('mes',JSON.stringify(choice));
+            location.href = 'submitmes.html';
+        }else{
+            alert('请选择一门课程后点击报名');
+        }
+    }
+</script>
 </html>
